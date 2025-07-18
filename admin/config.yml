@@ -1,18 +1,19 @@
-
 backend:
-  name: git-gateway
-  branch: main
+  name: github
+  repo: J-KAMMA/j-kamma-site  # ← GitHubリポジトリ名（正確に）
+  branch: main                # ← ブランチ名（必要なら変更）
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: "static/images/uploads"  # アップロード先（ローカル）
+public_folder: "/images/uploads"       # 公開URL上のパス
 
 collections:
   - name: "posts"
-    label: "Posts"
-    folder: "posts"
+    label: "思想記事"
+    folder: "content/posts"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "タイトル", name: "title", widget: "string" }
       - { label: "本文", name: "body", widget: "markdown" }
+
     
