@@ -6,32 +6,5 @@
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
   </head>
   <body>
-    <script>
-      window.CMS_MANUAL_INIT = true;
-      CMS.init({
-        config: {
-          backend: {
-            name: "github",
-            repo: "J-KAMMA/j-kamma-site",
-            branch: "main"
-          },
-          media_folder: "static/images/uploads",
-          public_folder: "/images/uploads",
-          collections: [
-            {
-              name: "posts",
-              label: "思想記事",
-              folder: "content/posts",
-              create: true,
-              slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
-              fields: [
-                { label: "タイトル", name: "title", widget: "string" },
-                { label: "本文", name: "body", widget: "markdown" }
-              ]
-            }
-          ]
-        }
-      });
-    </script>
   </body>
 </html>
