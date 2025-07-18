@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: J-KAMMA/j-kamma-site  # ← GitHubリポジトリ名（正確に）
   branch: main                # ← ブランチ名（必要なら変更）
 
