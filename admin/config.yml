@@ -1,5 +1,5 @@
 backend:
-  name: gate-way
+  name: git-gateway
   repo: J-KAMMA/J-KAMMA-SITE
   branch: main
 
