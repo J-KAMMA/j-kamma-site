@@ -1,9 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
   repo: j-kamma/j-kamma-site
   branch: main
-  login: true
-  site_url: https://comfy-chimera-206d26.netlify.app
   
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
