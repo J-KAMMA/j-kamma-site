@@ -1,6 +1,5 @@
 backend:
   name: git-gateway
-  repo: J-KAMMA/J-KAMMA-SITE
   branch: main
 
 media_folder: "static/images/uploads"
